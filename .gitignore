@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environments and local settings
+.venv/
+venv/
+.env
+.env.*
+.vscode/
+.idea/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.onnx
+*.engine
+checkpoints/
+weights/
+
+# Data and generated results
+data/
+datasets/
+runs/
+outputs/
+!assets/demo.gif
+!assets/demo.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
+

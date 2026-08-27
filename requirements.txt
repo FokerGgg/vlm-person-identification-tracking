@@ -1,0 +1,9 @@
+# Main YOLO + OpenCLIP pipeline. Install a CUDA-compatible PyTorch build first
+# when GPU acceleration is required: https://pytorch.org/get-started/locally/
+numpy
+opencv-python
+open-clip-torch
+Pillow
+torch
+ultralytics
+
