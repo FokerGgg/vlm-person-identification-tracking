@@ -1,0 +1,31 @@
+# Local environments, generated outputs and model downloads
+.venv/
+venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+dataset/
+datasets/
+data/
+Ultralytics/
+third_party/
+*.log
+
+# Model weights and personal configuration never belong in this code package
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.engine
+*.incomplete
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

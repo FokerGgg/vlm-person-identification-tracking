@@ -1,0 +1,5 @@
+[
+  {"id": "A", "start": 0.21, "end": 8.0, "expected_for_review_only": "Walking with jacket on; no jacket removal in this interval."},
+  {"id": "B", "start": 10.0, "end": 20.0, "expected_for_review_only": "Visible removal of the color-block jacket; lighter inner top remains, jacket carried."},
+  {"id": "C", "start": 20.0, "end": 27.0, "expected_for_review_only": "Walking after jacket removal; carried jacket does not imply a new removal action."}
+]

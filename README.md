@@ -1,12 +1,34 @@
 # Vision-Language Person Identification and Tracking
 
+## SAM3 version / SAM3 新版本
+
+The current SAM3-based offline prototype is available in **[sam3/](sam3/README.md)**.
+It uses SAM3 text-prompted video segmentation, OpenCLIP appearance memory,
+short-gap identity recovery, and conservative mask cleanup. A separate
+Qwen3-VL action-understanding diagnostic is included; it does not control
+tracking decisions. Robot motion control and real-time following are not yet
+implemented.
+
+**另一台电脑运行：** 克隆本仓库后进入 `sam3` 文件夹，按照
+[中文安装与运行说明](sam3/README.md)重新建立环境、登录 Hugging Face
+并下载模型。源视频、权重、虚拟环境及下载缓存不在仓库中。
+
+```powershell
+git clone https://github.com/FokerGgg/vlm-person-identification-tracking.git
+cd vlm-person-identification-tracking\sam3
+powershell -ExecutionPolicy Bypass -File .\setup_windows.ps1
+```
+
+The remaining sections document the original YOLO/OpenCLIP prototype under
+`src/`; its code and demonstration assets are retained.
+
 > Work in progress: a video perception prototype for finding and following a
 > specified person from a natural-language description and, optionally, a
 > reference image.
 
 ![Acquisition, tracking, and occlusion-state demo](assets/demo.gif)
 
-The current prototype detects people with YOLO11, assigns temporal track IDs
+The original prototype detects people with YOLO11, assigns temporal track IDs
 with ByteTrack, ranks candidates using OpenCLIP, and maintains a conservative
 appearance memory for identity recovery. It is intended to become the
 perception layer of a robot-following system; robot motion control and hardware
